@@ -1,0 +1,56 @@
+<header>
+    <nav class="container-nav">
+        <a href="/filmes"><li>Home</li></a>
+        <a href="/cadastrar"><li>Cadastrar</li></a>
+        <a href="/login"><li>Sair</li></a>
+    </nav>
+
+</header>
+
+<h1>Cadastrar Filme</h1>
+
+<div class="container-cadastrarFilme">
+        
+
+        <form action="/filmes/cadastrarFilme" method="post">
+
+            <label >Nome:</label>
+            <input type="text" name="nome">
+            <label >Categoria:</label>
+            <input type="text" name="categoria">
+            <label >Avaliação:</label>
+            <input type="text" name="avaliação">
+            <button type="submit">Cadastrar</button>
+
+        </form>
+</div>
+
+<h1>Tela filmes</h1>
+
+<div class="livro-container">
+
+    {{#each filmes}}
+
+        <div class="nome-container">
+            <p>Nome:</p>
+            <input type="text" value="{{this.nome}}">
+        </div>
+
+        <div class="categoria-container">
+            <p>Categoria:</p>
+            <input type="text" value="{{this.categoria}}">
+
+        </div>
+
+        <div class="avaliacao-container">
+            <p>Avaliação:</p>
+            <input type="text" value="{{this.avaliacao}}">
+
+        </div>
+            <a href="/editarFilme/{{this.idfilmes}}"><button>Editar</button></a>
+            <a href="/filmes/deletar/{{this.idfilmes}}"><button>Deletar</button></a>
+
+    {{/each}}
+
+
+</div>

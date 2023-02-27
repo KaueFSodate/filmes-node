@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #030027;
+}
+
+input{
+    border-radius: 10px;
+    height: 30px;
+    width: 220px;
+}
+
+label{
+    font-weight: bold;
+    color: black;
+}
+
+h1{
+    margin-top: 30px;
+    color: black;
+}
+
+
+
+.container-cadastrarFilme{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+
+
+
+.livro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    flex-wrap: wrap;
+}
+
+.livro-container p{
+    display: flex;
+    margin-right: 10px;
+    background-color: #011936;
+    height: 40px;
+    width: 120px;
+    color: #F9F9F9;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.nome-container{
+    width: 300px;
+    margin-right: 10px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.categoria-container{
+    width: 300px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.avaliacao-container{
+    width: 300px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    margin: 15px;
+    background-color: #FBFEF9;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    color: black;
+}
+
+button:hover{
+    height: 45px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.container-cadastroU-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-cadastroU-login label{
+    margin: 30px;
+}
+
+.container-nav{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+}
+
+.container-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    border-radius: 10px;
+    height: 35px;
+    width: 90px;
+    background-color: #FBFEF9;
+}
+
+.container-nav li:hover{
+    height: 45px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+

@@ -1,0 +1,18 @@
+<h1>Editar Filme</h1>
+
+<div class="container-editarFilme">
+        
+
+        <form action="/editarFilme" method="post">
+
+            <input type="hidden" name="idfilmes" value="{{filmes.idfilmes}}">
+            <label >Nome:</label>
+            <input type="text" name="nome" value="{{filmes.nome}}">
+            <label >Categoria:</label>
+            <input type="text" name="categoria" value="{{filmes.categoria}}">
+            <label >Avaliação:</label>
+            <input type="text" name="avaliação" value="{{filmes.avaliacao}}">
+            <button type="submit">Editar</button>
+
+        </form>
+</div>
